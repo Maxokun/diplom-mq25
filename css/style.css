@@ -200,13 +200,12 @@
   }
   .feature-wrapper{
     display: flex;
+    align-items: center;
   }
   .feature .feature-wrapper:nth-child(3){
     margin-top: 4.93vh;
   }
-  .feature-numbering{
-    margin-top: 3.5px;
-  } 
+
   .numbering{
     /* font-size: 4.38vw; */
     /* font-size: 14px; */
@@ -226,13 +225,36 @@
     /* width: 4.7vw; */
   }
   .feature-description{
-    margin-left: 9px;
+    display: flex;
+    flex-direction: row;
   }
   .feature-title{
     /* font-size: 2.3rem; */
+    display: flex;
+    align-items: center;
     font-size: calc(2.009vw + 16.571px);
     color: #c1c1c1;
   }
+  .pre-title{
+    display: block;
+    color: #000000;
+    font-size: calc(0.893vw  + 11.143px);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 5px;
+    line-height: 1.08;
+  }
+  .pre-title:after {
+    content: "";
+    display: block;
+    margin: 0 auto 0;
+    /* width: 1.5rem; */
+    height: 4px;
+    border-radius: 1.5px;
+    background-color: #5e42b0;
+
+  }
+
   .feature-description-text{
     margin-top: 4.75vh;
     line-height: 1.8rem;
@@ -247,11 +269,11 @@
   .features:nth-child(5) .feature-text{
     color: #ffffff;
   }
-  .athlets .features:nth-child(5) .numbering::after,
-  .players .features:nth-child(5) .numbering::after{
+  .athlets .features:nth-child(5) .pre-title::after,
+  .players .features:nth-child(5) .pre-title::after{
     background-color: #fff;
   }
-  .players .features:nth-child(5) .numbering{
+  .players .features:nth-child(5) .pre-title{
     color: #8765dd;
   }
   .player-basketballer-image{
@@ -535,7 +557,6 @@
       /* padding-left: 260px; */
     }
     .feature-numbering{
-      margin-top: 5px;
       line-height: 1.08;
     } 
     .numbering{
@@ -550,14 +571,26 @@
     .small-numbering::after{
       /* width: 2.6vw; */
     }
-    .feature-description{
+    /* .feature-description{
       margin-left: 12px;
-    }
+    } */
     .feature-title{
       /* font-size: 3.2rem; */
       font-size: calc(1.575vw  + 19.906px);
-      letter-spacing: 0.16rem;
       line-height: 1.08;
+    }
+    .pre-title{
+      text-transform: uppercase;
+    }
+    .pre-title:after {
+      /* content: "";
+      display: block;
+      margin: 0 auto 0;
+      /* width: 1.5rem; */
+      height: 5px;
+      border-radius: 2px;
+      /* background-color: #5e42b0; */ */
+  
     }
     .feature-description-text{
       margin-top: 3.2rem;
@@ -792,9 +825,6 @@
     .features:nth-child(5){
       padding-top: 60px;
     }
-    .feature-numbering{
-      margin-top: 0;
-    } 
     .numbering{
       font-size: 18px;
     }
@@ -804,13 +834,24 @@
       margin-top: 1.7px;
     }
 
-    .feature-description{
-      margin-left: 0.52vw;
-    }
     .feature-title{
       font-size: 36px;
       line-height: 0.96;
-      letter-spacing: 0.16rem;
+    }
+    .pre-title{
+      display: block;
+      color: #000000;
+      font-size: 18px;
+      margin-right: 5px;
+      line-height: 1.08;
+    }
+    .pre-title:after {
+      /* content: "";
+      display: block;
+      margin: 0 auto 0; */
+      /* width: 1.5rem; */
+      height: 5px;
+  
     }
     .feature-description-text{
       font-size: 2rem;
